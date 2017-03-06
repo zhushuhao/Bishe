@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.d.dao.bishe.ProgressActivity xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.d.dao.bishe.SettingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginRight="-16dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="配置"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="当前设备信息:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_device_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:gravity="center_vertical"
+                    android:hint="设备信息"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="配置服务器IP地址:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_server_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="服务器地址"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/btn_test_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp"
+                    android:text="服务器地址测试"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="配置服务器端口:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_server_port"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="默认5000"
+                    android:inputType="number"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="设备支持的视频尺寸:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(根据设备屏幕大小灵活选择)"
+                    android:textColor="#aa2764df"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="码率设置:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_bit_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="50dp"
+                    android:hint="默认2500000"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="帧率设置:"
+                    android:textColor="#2764df"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_frame_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="50dp"
+                    android:hint="默认20"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="完成"
+                    android:textColor="#fff" />
+
+
+                <Button
+                    android:id="@+id/btn_finish2"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorPrimary"
+                    android:text="完成"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</com.d.dao.bishe.ProgressActivity>
